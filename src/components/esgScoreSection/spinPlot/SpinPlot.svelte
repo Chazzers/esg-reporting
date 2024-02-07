@@ -253,7 +253,7 @@
 					{newData}
 					{maxData}
 					{areaGenerator1}
-					allCompanies={allCompanies && companyData.name === 'Nike'}
+					allCompanies={allCompanies && companyData.name === 'CompanyA'}
 				/>
 			{/await}
 
@@ -334,13 +334,13 @@
 	}
 	div.tooltip {
 		position: absolute;
-		top: var(--top);
+		bottom: var(--top);
 		left: var(--left);
 		pointer-events: none;
 		background-color: white;
 		padding: 1rem;
 		border-radius: 10px;
-		transform: translateY(-80%) translateX(-50%);
+		transform: translateX(-50%);
 		width: 100%;
 		text-align: center;
 	}

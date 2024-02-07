@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { writable } from 'svelte/store';
 	import SpinPlot from './SpinPlot.svelte';
 	import SpinEsgBoard from './SpinESGBoard.svelte';

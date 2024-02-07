@@ -1,5 +1,4 @@
 <script lang="ts">
-	import NikeLogoSVG from './NikeLogoSVG.svelte';
 	import { page } from '$app/stores';
 	import NavPillarLinks from './Nav/NavPillarLinks.svelte';
 </script>
@@ -7,8 +6,7 @@
 <nav>
 	<div>
 		<a class={'/' === $page.url.pathname ? 'active' : ''} style="--pillar-color: #fff" href="/">
-			<NikeLogoSVG />
-			<p>ESG REPORT</p>
+			<p>CompanyA - ESG REPORT</p>
 		</a>
 	</div>
 	<div>

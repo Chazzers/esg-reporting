@@ -2,10 +2,10 @@
 	import EsgCategorySection from '../../components/esgCategorySection/ESGCategorySection.svelte';
 	export let data;
 	const pillar = 'governance';
-	const nike = data.data.find((company) => company.name === 'Nike');
+	const companyA = data.data.find((company) => company.name === 'CompanyA');
 	const pillarColor = data.pillarColors.find((color) => color.pillar === pillar)?.color;
 
-	const tableContentCorruption = nike.values
+	const tableContentCorruption = companyA.values
 		.filter(
 			(item) =>
 				item.name === 'Total number of confirmed incidents of corruption or bribery' ||
@@ -24,7 +24,7 @@
 					: 'Dismissals/ discipline amount'
 		}));
 
-	const tableContentPaymentPractices = nike.values
+	const tableContentPaymentPractices = companyA.values
 		.filter(
 			(item) =>
 				item.name === 'Percentage of payments aligned with the standard payment terms' ||
@@ -40,18 +40,18 @@
 </script>
 
 <EsgCategorySection
-	data={nike}
+	data={companyA}
 	category={'corruptionOrBribery'}
 	chartString={'CorruptionBribery'}
-	description={`These values represent Nike's Corruption or Bribery values.`}
+	description={`These values represent CompanyA's Corruption or Bribery values.`}
 	{pillarColor}
 	tableContent={tableContentCorruption}
 />
 <EsgCategorySection
-	data={nike}
+	data={companyA}
 	category={'paymentPractices'}
 	chartString={'PaymentPractices'}
-	description={`These values represent Nike's Payment Practices.`}
+	description={`These values represent CompanyA's Payment Practices.`}
 	{pillarColor}
 	tableContent={tableContentPaymentPractices}
 />

@@ -131,7 +131,6 @@
 				on:mouseenter={() => {
 					const exclude = ['group', 'x'];
 					const dataKeys = Object.keys(rect.data).filter((item) => !exclude.includes(item));
-					const categories = ['Climate Change', 'Pollution', 'Water and marine sources'];
 					const newKeys = dataKeys.map((key) => {
 						switch (key) {
 							case 'climateChange':
@@ -148,13 +147,13 @@
 								return 'Business Conduct';
 						}
 					});
-					const width = x(rect[1]) - x(rect[0]);
+					const rectWidth = x(rect[1]) - x(rect[0]);
 
 					currentData.set({
 						name: newKeys[i],
 						value: roundToDecimal(rect.data[dataKeys[i]], 100),
-						x: calcXPos(rect) + width / 2,
-						y: y(rect.data.x)
+						x: calcXPos(rect) + rectWidth / 2,
+						y: height - y(rect.data.x)
 					});
 				}}
 				on:mouseleave={() => {

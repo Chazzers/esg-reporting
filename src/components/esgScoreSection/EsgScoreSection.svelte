@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { writable } from 'svelte/store';
+	import { onMount } from 'svelte';
 	import EsgScoreText from './scoreContent/ESGScoreText.svelte';
 	import EsgScoreMeter from './scoreContent/ESGScoreMeter.svelte';
 	import SpinPlotContainer from './spinPlot/SpinPlotContainer.svelte';

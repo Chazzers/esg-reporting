@@ -4,11 +4,11 @@
 </script>
 
 <section>
-	<h1>Explore more of Nike's Environment, Social and Governance values.</h1>
+	<h1>Explore more of CompanyA's Environment, Social and Governance values.</h1>
 	<div class="links">
 		<div>
 			<h2>Environment</h2>
-			<p>Find out about Nike's:</p>
+			<p>Find out about CompanyA's:</p>
 			<ul>
 				<li>C02 Emissions</li>
 				<li>Energy Consumption</li>
@@ -24,7 +24,7 @@
 		</div>
 		<div>
 			<h2>Social</h2>
-			<p>Find out about Nike's:</p>
+			<p>Find out about CompanyA's:</p>
 			<ul>
 				<li>Employee gender diversity</li>
 				<li>Employee health and safety</li>
@@ -40,7 +40,7 @@
 		</div>
 		<div>
 			<h2>Governance</h2>
-			<p>Find out about Nike's:</p>
+			<p>Find out about CompanyA's:</p>
 			<ul>
 				<li>Corruption and bribery</li>
 				<li>Lobbying tactics</li>

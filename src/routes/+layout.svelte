@@ -16,6 +16,6 @@
 <style>
 	.wrapper {
 		background-color: var(--theme-color);
-		margin-top: 4rem;
+		padding-top: 4rem;
 	}
 </style>

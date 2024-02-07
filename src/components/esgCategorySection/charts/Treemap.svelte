@@ -1,17 +1,31 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
-	import { uid } from 'uid';
 
 	export let data;
 	export let year;
 	export let pillarColor;
 	export let colors;
 	let treemapContainer;
-
+	export let treemapContainerProps;
 	onMount(() => {
-		const width = treemapContainer.offsetWidth;
-		const height = treemapContainer.offsetHeight;
+		const chartContainerElementSize = treemapContainer.getBoundingClientRect();
+		const width = treemapContainerProps.width
+			? treemapContainerProps.width
+			: chartContainerElementSize.width;
+		const height = treemapContainerProps.height
+			? treemapContainerProps.height
+			: chartContainerElementSize.height;
+
+		treemapContainerProps = {
+			width: treemapContainerProps.width
+				? treemapContainerProps.width
+				: chartContainerElementSize.width,
+			height: treemapContainerProps.height
+				? treemapContainerProps.height
+				: chartContainerElementSize.height
+		};
+		console.log(width, height);
 		const chart = () => {
 			const subcategories = [...new Set(data.map((item) => item.pillar_subsubcategory_name))];
 			const newData = subcategories.map((subCategory) => {

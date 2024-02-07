@@ -8,13 +8,15 @@
 	--color-governance: #2ac28b;
 	--bg-color-light: #f2f0ed;
 }
-
+body {
+	background-color: var(--theme-color);
+}
 p,
 button,
 a,
 text,
 div {
-	font-family: 'NeutralStd';
+	font-family: 'Inter';
 	line-height: 1.5;
 }
 
@@ -59,7 +61,6 @@ h3,
 h4,
 h5 {
 	font-size: var(--title-size);
-	/* letter-spacing: calc(var(--title-size) * 0.05); */
 }
 
 h1 {

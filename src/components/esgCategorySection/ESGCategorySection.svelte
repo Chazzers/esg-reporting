@@ -24,15 +24,16 @@
 </script>
 
 <section style="--pillar-color: {pillarColor}">
-	<LeftContentContainer
-		{title}
-		{description}
+	<LeftContentContainer {title} {description} data={categoryData} {year} {pillarColor} />
+	<ChartContainer
+		tableContent={categoryData}
+		{category}
+		{chartString}
 		data={categoryData}
 		{year}
-		{tableContent}
 		{pillarColor}
+		{colors}
 	/>
-	<ChartContainer {category} {chartString} data={categoryData} {year} {colors} />
 </section>
 
 <style>

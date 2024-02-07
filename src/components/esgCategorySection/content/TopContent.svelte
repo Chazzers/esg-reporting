@@ -17,7 +17,9 @@
 	<p>
 		{description}
 	</p>
-	<DataTable {tableContent} {pillarColor} />
+	{#if tableContent}
+		<DataTable {tableContent} {pillarColor} />
+	{/if}
 </section>
 
 <style>
